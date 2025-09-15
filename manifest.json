@@ -4,16 +4,15 @@
   "logoUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
   "components": [
     {
-      "name": "exporter",
-      "type": "COMMUNITY_VISUALIZATION",
+      "name": "Exporter",
+      "description": "Exports the current page’s filtered fields to your Cloud Run endpoint",
       "iconUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
-      "description": "Exports the filtered row(s) to your Cloud Run endpoint",
-      "resources": [
-        {
-          "type": "html",
-          "url": "index.html"
-        }
-      ]
+
+      /* IMPORTANT: Use a single "resource" block with an iframe URL */
+      "resource": {
+        "url": "https://<HOST>/index.html",
+        "useIframe": true
+      }
     }
   ]
 }
