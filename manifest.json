@@ -1,0 +1,19 @@
+{
+  "name": "JSON Exporter (No-Code)",
+  "organization": "community",
+  "logoUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
+  "components": [
+    {
+      "name": "exporter",
+      "type": "COMMUNITY_VISUALIZATION",
+      "iconUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
+      "description": "Exports the filtered row(s) to your Cloud Run endpoint",
+      "resources": [
+        {
+          "type": "html",
+          "url": "index.html"
+        }
+      ]
+    }
+  ]
+}
