@@ -1,18 +1,15 @@
 {
   "name": "JSON Exporter (No-Code)",
-  "organization": "community",
+  "organization": "ZCS",
   "logoUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
+  "packageUrl": "https://simar-sharma.github.io/lookerstudio-json-exporter/",
   "components": [
     {
-      "name": "Exporter",
-      "description": "Exports the current page’s filtered fields to your Cloud Run endpoint",
+      "name": "exporter",
+      "type": "COMMUNITY_VISUALIZATION",
       "iconUrl": "https://ssl.gstatic.com/analytics/20220915-00/LoStudiologo.png",
-
-      /* IMPORTANT: Use a single "resource" block with an iframe URL */
-      "resource": {
-        "url": "https://<HOST>/index.html",
-        "useIframe": true
-      }
+      "entryPoint": "index.js",
+      "description": "Exports filtered page data to a Cloud Run endpoint."
     }
   ]
 }
